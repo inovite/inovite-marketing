@@ -62,3 +62,39 @@
   font-size: 18px
   @media screen and (max-width: 767px)
     font-size: 14px
+
+
+@-webkit-keyframes fadeInUp
+  from
+    opacity: 0
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
+
+  to
+    opacity: 1
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+@keyframes fadeInUp
+  from
+    opacity: 0
+    -webkit-transform: translate3d(0, 100%, 0)
+    transform: translate3d(0, 100%, 0)
+
+  to
+    opacity: 1
+    -webkit-transform: translate3d(0, 0, 0)
+    transform: translate3d(0, 0, 0)
+
+.fadeInUp
+  -webkit-animation-name: fadeInUp
+  animation-name: fadeInUp
+
+.animated
+  animation-duration: 1s
+  animation-fill-mode: both
+  -webkit-animation-duration: 1s
+  -webkit-animation-fill-mode: both
+
+.animatedFadeInUp
+  opacity: 0
